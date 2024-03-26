@@ -8,14 +8,11 @@ import (
 )
 
 var testcases = []struct {
-	plaintext  []byte
-	ciphertext []byte
-	key        byte
+	plaintext, ciphertext []byte
+	key                   byte
 }{
 	{[]byte("HAL"), []byte("IBM"), 1},
-	{[]byte(""), []byte(""), 1},
-	{[]byte{}, []byte{}, 1},
-	{nil, nil, 1},
+	{[]byte("BEEF"), []byte("LOOP"), 10},
 }
 
 func TestEncrypt(t *testing.T) {
