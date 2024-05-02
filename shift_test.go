@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"shift"
+	"github.com/gokatas/shift"
 )
 
 var testcases = []struct {
