@@ -1,6 +1,8 @@
-// Package shift implements shift cipher. It encrypts a plaintext message by adding
-// a key to each byte. It decrypts a ciphertext message by subtracting a key from
-// each byte. Start with tests. Adapted from https://github.com/bitfield/eg-crypto.
+// Package shift implements a toy shift cipher (don't write your own crypto code
+// for production use unless you're Rivest, Shamir or Adleman :-). It encrypts a
+// plaintext message by adding a key to each byte. It decrypts a ciphertext
+// message by subtracting a key from each byte. Start with tests. Adapted from
+// https://github.com/bitfield/eg-crypto.
 package shift
 
 func Encrypt(plaintext []byte, key byte) []byte {
